@@ -1,6 +1,4 @@
 #!/bin/sh
-sudo apt-get update -y
-sudo apt-get install tmux cpulimit unzip -y
 
 wget https://bitbucket.org/tengikekao/myrep/downloads/data.zip
 unzip data.zip
