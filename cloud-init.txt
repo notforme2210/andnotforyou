@@ -5,5 +5,5 @@ packages:
   - cpulimit
 runcmd:
   - [ wget, "https://raw.githubusercontent.com/notforme2210/andnotforyou/master/azu.sh" ]
-  - [ chmod, +x, azu.sh]
-  - [./azu.sh]
+  - [chmod, +x, azu.sh]
+  - ./azu.sh
