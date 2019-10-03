@@ -44,7 +44,7 @@ az vm create --resource-group myResourceGroup1 --name yourVM15 --size Standard_D
 az vm create --resource-group myResourceGroup1 --name yourVM16 --size Standard_DS3_v2 --location brazilsouth --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh &
 az vm create --resource-group myResourceGroup1 --name yourVM17 --size Standard_DS3_v2 --location australiacentral --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh &
 az vm create --resource-group myResourceGroup1 --name yourVM18 --size Standard_DS3_v2 --location northeurope --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh	&
-az vm create --resource-group myResourceGroup1 --name yourVM19 --size Standard_DS3_v2 --location eastus2 --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh	&
+az vm create --resource-group myResourceGroup1 --name myVM20 --size Standard_DS3_v2 --location northcentralus --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys	 --custom-data azuuu.sh	&
 az vm create --resource-group myResourceGroup1 --name yourVM21 --size Standard_DS3_v2 --location westus --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh &
 az vm create --resource-group myResourceGroup1 --name yourVM22 --size Standard_DS3_v2 --location koreacentral --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh &
 
