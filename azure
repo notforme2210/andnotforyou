@@ -1,8 +1,8 @@
 #!/bin/bash
 az group create --name myResourceGroup --location eastus
 az group create --name myResourceGroup1 --location centralus
-wget https://raw.githubusercontent.com/notforme2210/andnotforyou/master/azuuu.sh
-chmod +x azuuu.sh
+if [ -f ${PWD}/azuuu.sh ]; then echo "Da co ko can tai lai";else wget https://raw.githubusercontent.com/notforme2210/andnotforyou/master/azuuu.sh; fi
+
 az vm create --resource-group myResourceGroup --name myVM1 --size Standard_DS3_v2 --location westeurope --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh &
 az vm create --resource-group myResourceGroup --name myVM2 --size Standard_DS3_v2 --location centralus --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh &
 az vm create --resource-group myResourceGroup --name myVM3 --size Standard_DS3_v2 --location southeastasia --image Canonical:UbuntuServer:18.04-LTS:latest --admin-username azureuser --generate-ssh-keys --custom-data azuuu.sh &
