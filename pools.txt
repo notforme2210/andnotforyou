@@ -1,0 +1,13 @@
+"pool_list": [
+    {
+        "pool_address": "pool.bloc.money:6666",
+        "wallet_address": "abLoc7JNzYXijnKnPf7tSFUNSWBuwKrmUPMevvPkH4jc3b1K9LmS76DKpPamgQ5AYAC2CW9dJfTJ91AnXHYDNXAKRqPx5ZrtR49+f2e80c23ef5526e8da0d2633972f23e6586e37f8509757433c27aafed6030b47",
+        "rig_id": "test",
+        "pool_password": "x",
+        "use_nicehash": false,
+        "use_tls": false,
+        "tls_fingerprint": "",
+        "pool_weight": 1
+    },
+],
+"currency": "cryptonight_haven",
